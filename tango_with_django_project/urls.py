@@ -24,7 +24,7 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', index),
+    path('index/', index, name = 'index'),
     path('rango/', include('rango.urls'))
 ]
 

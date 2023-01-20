@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+</head>
+<body>
+    <h1>Rango says here is the about page.</h1>
+    <h2>here is the about page.</h2>
+    <h2>here is the <a href="{% url 'index' %}">index</a> page.</h2>
+    <img src="{% static 'images/01.jpg' %}" alt="Rango">
+    <h3>This tutorial has been put together by Boran Li.</h3>
+    <img src="/media/cat.jpeg" alt="Picture of a Cat" style="width: 150px;">
+</body>
+</html>

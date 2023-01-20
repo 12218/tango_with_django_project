@@ -15,4 +15,5 @@ def about(request):
     # print(__file__)
     # print(os.path.dirname(__file__))
     # print(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    return HttpResponse("HttpResponse: 'Rango says here is the about page.' Now we can go \"<a href=\"/rango/index\">index</a>\" page")
+    # return HttpResponse("HttpResponse: 'Rango says here is the about page.' Now we can go \"<a href=\"/rango/index\">index</a>\" page")
+    return render(request, 'rango/about.html')
