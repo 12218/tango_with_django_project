@@ -1,6 +1,7 @@
 import os
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Category
 
 # Create your views here.
 def index(request):
@@ -8,6 +9,10 @@ def index(request):
     content_text = {
         'boldmessage': 'Crunchy, creamy, cookie, candy, cupcake!'
     }
+
+    category = Category.objects.order_by('id')
+
+    content_text['category'] = category
 
     return render(request, 'rango/index.html', content_text)
 

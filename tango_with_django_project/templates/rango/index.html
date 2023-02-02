@@ -19,6 +19,17 @@
         <img src="{% static 'images/01.jpg' %}" alt="01">
         <img src="/media/01.jpg" alt="02">
     </div>
+    <div>
+        {% if category %}
+            <ul>
+                {% for c in category %}
+                    <li>{{ c.name }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            No category!
+        {% endif %}
+    </div>
 </body>
 
 </html>
