@@ -21,13 +21,13 @@
     </div>
     <div>
         {% if category %}
-            <ul>
-                {% for c in category %}
-                    <li>{{ c.name }}</li>
-                {% endfor %}
-            </ul>
+        <ul>
+            {% for c in category %}
+                <li><a href="/rango/category/{{ c.slug }}">{{ c.name }}</a></li>
+            {% endfor %}
+        </ul>
         {% else %}
-            No category!
+        No category!
         {% endif %}
     </div>
 </body>
